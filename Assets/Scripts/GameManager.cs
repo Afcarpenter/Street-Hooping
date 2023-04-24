@@ -5,11 +5,14 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.IO;
+using UnityEngine.Rendering;
 
 public class GameManager : MonoBehaviour
 {
     //UI Elements
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI highScoreText;
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI countdownText;
     public GameObject titleScreen;
@@ -29,6 +32,7 @@ public class GameManager : MonoBehaviour
 
     public float startingTime = 60;
     private int score;
+    private int highScore;
     private float timer;
     private bool gameIsActive = false;
     private bool shotClockIsActive = false;
@@ -38,6 +42,7 @@ public class GameManager : MonoBehaviour
     {
         player = GameObject.Find("Player");
         basketballHoop = GameObject.Find("Basketball Hoop");
+        LoadHighScore();
     }
 
     private void Update()
@@ -74,6 +79,14 @@ public class GameManager : MonoBehaviour
         scoreText.gameObject.SetActive(false);
         timerText.gameObject.SetActive(false);
         gameCamera.gameObject.SetActive(false);
+
+        if(score > highScore)
+        {
+            highScore = score;
+        }
+
+        highScoreText.text = highScore.ToString();
+        SaveHighScore();
     }
 
     public void AddToScore(int amountToAdd)
@@ -166,5 +179,34 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    [System.Serializable]
+    class SaveData
+    {
+        public int HighScore;
+    }
+
+    public void SaveHighScore()
+    {
+        SaveData data = new SaveData();
+        data.HighScore = highScore;
+
+        string json = JsonUtility.ToJson(data);
+
+        File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
+    }
+
+    public void LoadHighScore()
+    {
+        string path = Application.persistentDataPath + "/savefile.json";
+
+        if (File.Exists(path))
+        {
+            string json = File.ReadAllText(path);
+            SaveData data = JsonUtility.FromJson<SaveData>(json);
+
+            highScore = data.HighScore;
+        }
     }
 }
