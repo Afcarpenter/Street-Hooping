@@ -611,7 +611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 400127105}
-  lineSegments: 300
+  lineSegments: 500
   timeOfFlight: 1.5
   collisionMarker: {fileID: 1412141634}
   layerMask:
@@ -838,7 +838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 310835250349438794, guid: 5f8198807ed0c394795c1361c4a755b0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 310835250349438794, guid: 5f8198807ed0c394795c1361c4a755b0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2873,7 +2873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 5
-  m_FollowOffset: {x: 0, y: 0.2277302, z: -1.402652}
+  m_FollowOffset: {x: 0, y: 0.08948097, z: -1.162994}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -9085,7 +9085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 5
-  m_FollowOffset: {x: 0, y: 0.2277302, z: -1.402652}
+  m_FollowOffset: {x: 0, y: 0.08948097, z: -1.162994}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -9212,7 +9212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 5
-  m_FollowOffset: {x: 0, y: 0.2277302, z: -1.402652}
+  m_FollowOffset: {x: 0, y: 0.08948097, z: -1.162994}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -10035,7 +10035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9170895749551186956, guid: 90e7c4919d221f246a7702573e29a9c4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9170895749551186957, guid: 90e7c4919d221f246a7702573e29a9c4, type: 3}
       propertyPath: m_RootOrder

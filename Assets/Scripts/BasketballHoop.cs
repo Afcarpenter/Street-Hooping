@@ -35,10 +35,9 @@ public class BasketballHoop : MonoBehaviour
                 }
                 break;
             case 2:
-                if (speed < 2)
-                {
-                    speed = 2;
-                }
+                
+                speed = 1.5f;                
+
                 if (Vector3.Distance(transform.position, destinationPosition) < .05f)
                 {
                     destinationPosition = new Vector3(horizontalBound * RandomSign(), startingPosition.y, startingPosition.z);
@@ -48,10 +47,9 @@ public class BasketballHoop : MonoBehaviour
                 }
                 break;
             case 3:
-                if (speed > 1)
-                {
-                    speed = 1;
-                }
+                
+                speed = 1;
+                
                 if (Vector3.Distance(transform.position, destinationPosition) < .05f)
                 {
                     destinationPosition = new Vector3(Random.Range(-horizontalBound, horizontalBound), Random.Range(-verticalBound, verticalBound) + startingPosition.y, startingPosition.z);

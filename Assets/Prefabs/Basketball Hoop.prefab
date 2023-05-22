@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 310835248664098465}
   - component: {fileID: 310835248664098464}
   - component: {fileID: 310835248664098463}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cylinder (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 310835248849317830}
   - component: {fileID: 310835248849317829}
   - component: {fileID: 310835248849317828}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cylinder (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 310835248979132096}
   - component: {fileID: 310835248979132095}
   - component: {fileID: 310835248979132094}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 310835249239571119}
   - component: {fileID: 310835249239571118}
   - component: {fileID: 310835249239571117}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cylinder (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 310835249354527814}
   - component: {fileID: 310835249354527813}
   - component: {fileID: 310835249354527812}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Backboard
   m_TagString: Backboard
   m_Icon: {fileID: 0}
@@ -503,7 +503,7 @@ GameObject:
   - component: {fileID: 310835249407446026}
   - component: {fileID: 310835249407446025}
   - component: {fileID: 310835249407446024}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -600,7 +600,7 @@ GameObject:
   - component: {fileID: 310835249617680789}
   - component: {fileID: 310835249617680788}
   - component: {fileID: 310835249617680787}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -694,7 +694,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 310835249713961306}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Hoop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -734,7 +734,7 @@ GameObject:
   - component: {fileID: 310835249752518278}
   - component: {fileID: 310835249752518277}
   - component: {fileID: 310835249752518276}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cylinder (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -833,7 +833,7 @@ GameObject:
   - component: {fileID: 310835249817439887}
   - component: {fileID: 310835249817439886}
   - component: {fileID: 310835249817439885}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -930,7 +930,7 @@ GameObject:
   - component: {fileID: 310835250117981887}
   - component: {fileID: 310835250117981886}
   - component: {fileID: 310835250117981885}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cylinder (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1029,7 +1029,7 @@ GameObject:
   - component: {fileID: 310835250162462547}
   - component: {fileID: 310835250162462546}
   - component: {fileID: 310835250162462545}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1126,7 +1126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 310835250349438794}
   - component: {fileID: 310835250349438795}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Basketball Hoop
   m_TagString: Backboard
   m_Icon: {fileID: 0}
@@ -1148,7 +1148,7 @@ Transform:
   - {fileID: 310835249354527811}
   - {fileID: 310835249713961306}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &310835250349438795
 BoxCollider:
@@ -1175,7 +1175,7 @@ GameObject:
   - component: {fileID: 310835250374706332}
   - component: {fileID: 310835250374706331}
   - component: {fileID: 310835250374706330}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1272,7 +1272,7 @@ GameObject:
   - component: {fileID: 310835250547217612}
   - component: {fileID: 310835250547217611}
   - component: {fileID: 310835250547217610}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}

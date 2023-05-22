@@ -39,6 +39,8 @@ public class PlayerController : MonoBehaviour
     {
         if (heldBasketball != null && gameIsActive)
         {
+            StopAllCoroutines();
+
             if ((Input.GetButtonUp("Fire1") || throwForce >= maxThrowForce))
             {
                 if (throwForce > maxThrowForce)
@@ -64,6 +66,7 @@ public class PlayerController : MonoBehaviour
                 throwForce += chargeSpeed * Time.deltaTime;
                 throwVelocity = (mainCamera.transform.forward + Vector3.up).normalized * throwForce;
 
+                chargeSlider.gameObject.SetActive(true);
                 trajectoryLine.ShowTrajectoryLine(basketballHoldPoint.position, throwVelocity);
                 chargeSlider.value = (throwForce - minThrowForce) / (maxThrowForce - minThrowForce);
             }
@@ -96,6 +99,12 @@ public class PlayerController : MonoBehaviour
     IEnumerator HideShotUI()
     {
         yield return new WaitForSeconds(ballSpawnDelay);
+        trajectoryLine.HideTrajectoryLine();
+        chargeSlider.gameObject.SetActive(false);
+    }
+
+    void HideShotMarker()
+    {
         trajectoryLine.HideTrajectoryLine();
         chargeSlider.gameObject.SetActive(false);
     }
